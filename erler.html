@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<title>Z&B - Ерлер бөлімі</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #fafafa;
+    }
+
+    /* Навигация */
+    .navbar {
+        display: flex;
+        align-items: center;
+        padding: 10px 40px;
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    .navbar img { width: 60px; margin-right: 40px; }
+    .navbar a { margin: 0 15px; text-decoration: none; color: #000; font-size: 16px; }
+    .navbar a:hover { color: #cc0000; }
+
+    /* Ерлер бөлімі */
+    h1 {
+        text-align: center;
+        padding: 20px;
+        background: #cc0000;
+        color: #fff;
+        margin: 0;
+    }
+
+    .products { display: flex; flex-direction: column; gap: 20px; margin: 20px; padding: 0; }
+    .card { position: relative; overflow: hidden; cursor: pointer; }
+    .card img { width: 100%; height: 60vh; object-fit: cover; display: block; filter: brightness(65%); transition: transform 0.3s; }
+    .card img:hover { transform: scale(1.05); }
+
+    .card-content {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: white;
+        text-shadow: 1px 1px 8px rgba(0,0,0,0.8);
+    }
+    .card-content h3 { font-size: 32px; margin-bottom: 5px; }
+    .card-content p { font-size: 16px; margin: 3px 0; }
+    .price { color: #ff6666; font-size: 22px; font-weight: bold; margin-top: 5px; }
+</style>
+</head>
+<body>
+
+<!-- Навигация -->
+<div class="navbar">
+    <img src="Z&B.gif" alt="Z&B Logo">
+    <a href="jana.html">Жаңа</a>
+    <a href="erler.html">Ерлер</a>
+    <a href="aielder.html">Әйелдер</a>
+    <a href="balalar.html">Балалар</a>
+    <a href="akses.html">Аксессуарлар</a>
+    <a href="sport.html">Спорт</a>
+    <a href="jeñildik.html">Жеңілдіктер</a>
+</div>
+
+<h1>Ерлерге арналған жаңа коллекциялар</h1>
+
+<div class="products">
+    <div class="card">
+        <a href="jana-footbolka-erler.html">
+            <img src="erler-1.gif" alt="Ерлер футболкасы">
+            <div class="card-content">
+                <h3>Ерлер футболкасы</h3>
+                <p>Материалы: 100% мақта</p>
+                <p>Түстері: ақ, қара, сұр</p>
+                <div class="price">5990 ₸</div>
+            </div>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="jana-kurtka-erler.html">
+            <img src="erler-2.gif" alt="Куртка">
+            <div class="card-content">
+                <h3>Куртка</h3>
+                <p>Материалы: су өтпейтін мата</p>
+                <p>Өлшемдері: M, L, XL</p>
+                <div class="price">15990 ₸</div>
+            </div>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="jana-jeans-erler.html">
+            <img src="erler-3.gif" alt="Джинсы">
+            <div class="card-content">
+                <h3>Джинсы</h3>
+                <p>Материалы: деним</p>
+                <p>Түсі: көк</p>
+                <div class="price">10990 ₸</div>
+            </div>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="jana-sneakers-erler.html">
+            <img src="erler-4.gif" alt="Кроссовка">
+            <div class="card-content">
+                <h3>Кроссовка</h3>
+                <p>Материалы: былғары және мата</p>
+                <p>Өлшемдері: 40–45</p>
+                <div class="price">13990 ₸</div>
+            </div>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

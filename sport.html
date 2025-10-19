@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Z&B - Спорт</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+    }
+
+    /* Навигация */
+    .navbar {
+      display: flex;
+      align-items: center;
+      padding: 10px 40px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar img {
+      width: 60px;
+      margin-right: 40px;
+    }
+
+    .navbar a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+      font-size: 16px;
+    }
+
+    .navbar a:hover {
+      color: #cc0000;
+    }
+
+    .navbar .search {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      background: #f5f5f5;
+      border-radius: 20px;
+      padding: 5px 10px;
+    }
+
+    .navbar .search input {
+      border: none;
+      background: transparent;
+      outline: none;
+      padding: 5px;
+      font-size: 14px;
+    }
+
+    /* Тақырып */
+    h1 {
+      text-align: center;
+      padding: 20px;
+      background: #cc0000;
+      color: #fff;
+      margin: 0;
+    }
+
+    /* Өнімдер */
+    .products {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100vh; /* толық экран биіктігі */
+      object-fit: cover;
+      display: block;
+      filter: brightness(65%); /* суретті күңгірттеу */
+    }
+
+    .card-content {
+      position: absolute;
+      bottom: 50px;
+      left: 50px;
+      color: white;
+      text-shadow: 1px 1px 8px rgba(0,0,0,0.8);
+    }
+
+    .card-content h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .card-content p {
+      font-size: 20px;
+      margin: 5px 0;
+    }
+
+    .price {
+      color: #ff6666;
+      font-size: 26px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Навигация -->
+<div class="navbar">
+  <img src="Z&B.gif" alt="Z&B Logo">
+  <a href="jana.html">Жаңа</a>
+  <a href="erler.html">Ерлер</a>
+  <a href="aielder.html">Әйелдер</a>
+  <a href="balalar.html">Балалар</a>
+  <a href="akses.html">Аксессуарлар</a>
+  <a href="sport.html">Спорт</a>
+  <a href="jeñildik.html">Жеңілдіктер</a>
+</div>
+
+<!-- Спорт бөлімі -->
+<h1>Спортқа арналған жаңа коллекциялар</h1>
+
+<div class="products">
+  <div class="card">
+    <a href="sport-futbolka.html">
+      <img src="спорт-футболка.gif" alt="Спорт футболка">
+    </a>
+    <div class="card-content">
+      <h2>Спорттық футболка</h2>
+      <p>Материалы: полиэстер</p>
+      <p>Ыңғайлы және ауа өткізгіш</p>
+      <div class="price">4990 ₸</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <a href="sport-shalbar.html">
+      <img src="спорт-шалбар.gif" alt="Спорт шалбары">
+    </a>
+    <div class="card-content">
+      <h2>Спорт шалбары</h2>
+      <p>Жұмсақ әрі жеңіл материал</p>
+      <p>Күнделікті және жаттығуға арналған</p>
+      <div class="price">7990 ₸</div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

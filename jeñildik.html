@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Z&B - Жеңілдіктер</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+    }
+
+    /* Навигация */
+    .navbar {
+      display: flex;
+      align-items: center;
+      padding: 10px 40px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar img {
+      width: 60px;
+      margin-right: 40px;
+    }
+
+    .navbar a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+      font-size: 16px;
+    }
+
+    .navbar a:hover {
+      color: #cc0000;
+    }
+
+    .navbar .search {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      background: #f5f5f5;
+      border-radius: 20px;
+      padding: 5px 10px;
+    }
+
+    .navbar .search input {
+      border: none;
+      background: transparent;
+      outline: none;
+      padding: 5px;
+      font-size: 14px;
+    }
+
+    /* Тақырып */
+    h1 {
+      text-align: center;
+      padding: 20px;
+      background: #cc0000;
+      color: #fff;
+      margin: 0;
+    }
+
+    /* Өнімдер */
+    .products {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100vh; /* Толық экран биіктігі */
+      object-fit: cover;
+      display: block;
+      filter: brightness(60%);
+    }
+
+    .card-content {
+      position: absolute;
+      bottom: 50px;
+      left: 50px;
+      color: white;
+      text-shadow: 1px 1px 8px rgba(0,0,0,0.8);
+    }
+
+    .card-content h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .card-content p {
+      font-size: 22px;
+      margin: 5px 0;
+    }
+
+    .price {
+      color: #ff6666;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    s {
+      color: #ccc;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Навигация -->
+<div class="navbar">
+  <img src="Z&B.gif" alt="Z&B Logo">
+  <a href="jana.html">Жаңа</a>
+  <a href="erler.html">Ерлер</a>
+  <a href="aielder.html">Әйелдер</a>
+  <a href="balalar.html">Балалар</a>
+  <a href="akses.html">Аксессуарлар</a>
+  <a href="sport.html">Спорт</a>
+  <a href="jeñildik.html">Жеңілдіктер</a>
+</div>
+
+<!-- Жеңілдіктер бөлімі -->
+<h1>Жеңілдіктер</h1>
+
+<div class="products">
+  <div class="card">
+    <a href="balalar-futbolka-jen.html">
+      <img src="жеңілдік-футболка.gif" alt="Футболка жеңілдікпен">
+    </a>
+    <div class="card-content">
+      <h2>Футболка (-30%)</h2>
+      <p>Материалы: 100% мақта</p>
+      <p>Бағасы: <s>5990 ₸</s> <span class="price">4190 ₸</span></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <a href="aielder-koylek-jen.html">
+      <img src="жеңілдік-көйлек.gif" alt="Көйлек жеңілдікпен">
+    </a>
+    <div class="card-content">
+      <h2>Көйлек (-40%)</h2>
+      <p>Материалы: Жібек</p>
+      <p>Бағасы: <s>8990 ₸</s> <span class="price">5390 ₸</span></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

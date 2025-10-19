@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Белдік - Z&B</title>
+  <style>
+    :root {
+      --red: #cc0000;
+      --dark: #222;
+      --bg: #fafafa;
+      --card: #fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      padding: 10px 40px;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .navbar img { width: 60px; margin-right: 40px; }
+    .navbar a { margin: 0 15px; text-decoration: none; color: #000; font-size: 16px; }
+    .navbar a:hover { color: var(--red); }
+
+    .product-page {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: var(--card);
+      border-radius: 12px;
+      padding: 30px;
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .product-page img {
+      flex: 1 1 300px;
+      max-width: 400px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+    .product-info {
+      flex: 1 1 300px;
+    }
+    .product-info h1 { font-size: 28px; margin-bottom: 15px; }
+    .product-info p { font-size: 16px; margin-bottom: 10px; }
+    .product-info select {
+      padding: 6px;
+      font-size: 16px;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+    .price { color: var(--red); font-weight: 700; font-size: 20px; margin: 15px 0; }
+    .btn {
+      background: var(--red);
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn:hover { background: #a80000; }
+    .message {
+      margin-top: 15px;
+      padding: 10px;
+      background: #d4edda;
+      color: #155724;
+      border-radius: 6px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  <img src="Z&B.gif" alt="Z&B Logo">
+  <a href="jana.html">Жаңа</a>
+  <a href="erler.html">Ерлер</a>
+  <a href="aielder.html">Әйелдер</a>
+  <a href="balalar.html">Балалар</a>
+  <a href="akses.html">Аксессуарлар</a>
+  <a href="sport.html">Спорт</a>
+  <a href="jeñildik.html">Жеңілдіктер</a>
+</div>
+
+<main>
+  <div class="product-page">
+    <img src="белдік.gif" alt="Белдік">
+    <div class="product-info">
+      <h1>Белдік</h1>
+      <p>Материалы: табиғи тері. Классикалық стильде, барлық киіммен үйлеседі.</p>
+
+      <label for="color">Түс таңдаңыз:</label><br>
+      <select id="color">
+        <option value="қара" data-price="3990">Қара</option>
+        <option value="қоңыр" data-price="3990">Қоңыр</option>
+        <option value="ақ" data-price="3990">Ақ</option>
+      </select>
+
+      <div class="price" id="price">3990 ₸</div>
+
+      <button class="btn" id="buyBtn">Сатып алу</button>
+
+      <div class="message" id="message">Сіз өнімді сатып алуға таңдадыңыз!</div>
+    </div>
+  </div>
+</main>
+
+<script>
+  const colorSelect = document.getElementById('color');
+  const priceDiv = document.getElementById('price');
+  const buyBtn = document.getElementById('buyBtn');
+  const message = document.getElementById('message');
+
+  colorSelect.addEventListener('change', () => {
+    const selectedOption = colorSelect.selectedOptions[0];
+    const newPrice = selectedOption.getAttribute('data-price');
+    priceDiv.textContent = newPrice + ' ₸';
+  });
+
+  buyBtn.addEventListener('click', () => {
+    message.style.display = 'block';
+    setTimeout(() => {
+      message.style.display = 'none';
+    }, 3000);
+  });
+</script>
+
+</body>
+</html>

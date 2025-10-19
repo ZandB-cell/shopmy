@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Z&B - Аксессуарлар</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+    }
+
+    /* Навигация */
+    .navbar {
+      display: flex;
+      align-items: center;
+      padding: 10px 40px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar img {
+      width: 60px;
+      margin-right: 40px;
+    }
+
+    .navbar a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+      font-size: 16px;
+    }
+
+    .navbar a:hover {
+      color: #cc0000;
+    }
+
+    .navbar .search {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      background: #f5f5f5;
+      border-radius: 20px;
+      padding: 5px 10px;
+    }
+
+    .navbar .search input {
+      border: none;
+      background: transparent;
+      outline: none;
+      padding: 5px;
+      font-size: 14px;
+    }
+
+    /* Бөлім атауы */
+    h1 {
+      text-align: center;
+      padding: 20px;
+      background: #cc0000;
+      color: #fff;
+      margin: 0;
+    }
+
+    /* Өнімдер */
+    .products {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100vh; /* Толық экран биіктігі */
+      object-fit: cover;
+      display: block;
+      filter: brightness(65%); /* Фонды күңгірттеу */
+    }
+
+    .card-content {
+      position: absolute;
+      bottom: 50px;
+      left: 50px;
+      color: white;
+      text-shadow: 1px 1px 8px rgba(0,0,0,0.8);
+    }
+
+    .card-content h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .card-content p {
+      font-size: 20px;
+      margin: 5px 0;
+    }
+
+    .price {
+      color: #ff6666;
+      font-size: 26px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Навигация -->
+<div class="navbar">
+  <img src="Z&B.gif" alt="Z&B Logo">
+  <a href="jana.html">Жаңа</a>
+  <a href="erler.html">Ерлер</a>
+  <a href="aielder.html">Әйелдер</a>
+  <a href="balalar.html">Балалар</a>
+  <a href="akses.html">Аксессуарлар</a>
+  <a href="sport.html">Спорт</a>
+  <a href="jeñildik.html">Жеңілдіктер</a>
+</div>
+
+<!-- Аксессуарлар бөлімі -->
+<h1>Аксессуарлар</h1>
+
+<div class="products">
+  <div class="card">
+    <a href="akses-somke.html">
+      <img src="сөмке.gif" alt="Сөмке">
+      <div class="card-content">
+        <h2>Сөмке</h2>
+        <p>Материалы: былғары</p>
+        <p>Сәнді және ыңғайлы дизайн</p>
+        <div class="price">6990 ₸</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="akses-beldik.html">
+      <img src="белдік.gif" alt="Белдік">
+      <div class="card-content">
+        <h2>Белдік</h2>
+        <p>Материалы: табиғи тері</p>
+        <p>Классикалық үлгі</p>
+        <div class="price">3990 ₸</div>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+</body>
+</html>
